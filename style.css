@@ -1,0 +1,143 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+body {
+	background-color: hsl(0, 0%, 98%);
+	padding: 2rem 18rem 0rem 16rem;
+}
+h1 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 200;
+	font-size: 1.8rem;
+	text-align: center;
+}
+h2 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-align: center;
+}
+#description {
+	text-align: center;
+	margin: 1rem 20rem 3rem 20rem;
+	font-size: 0.9rem;
+}
+#main {
+	display: grid;
+	grid-template-column: 1fr 1fr 1fr;
+	grid-template-row: 1fr 1fr;
+	gap: 2rem;
+	height: 450px;
+	margin-bottom: 1rem;
+}
+.box {
+	background-color: white;
+	border-radius: 8px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0.5rem 0.5rem 1rem lightblue;
+}
+h3 {
+	color: hsl(234, 12%, 34%);
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+p {
+	color: hsl(229, 6%, 66%);
+	font-size: 0.85rem;
+}
+img {
+	width: 20%;
+	position: relative;
+	top: 70%;
+	left: 75%;
+}
+#box1 {
+	border-top: 4px solid hsl(180, 62%, 55%);
+	grid-column: 1/2;
+	align-self: center;
+	height: 50%;
+}
+#middle {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-row: 1fr 1fr;
+	gap: 2rem;
+	
+}
+#box2 {
+	border-top: 4px solid hsl(0, 78%, 62%);
+	height: 100%;
+}
+#box3 {
+	border-top: 4px solid hsl(34, 97%, 64%);
+	height: 100%;
+}
+#box4 {
+	border-top: 4px solid hsl(212, 86%, 64%);
+	grid-column: 3/4;
+	height: 50%;
+	align-self: center;
+}
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(180, 62%, 55%); 
+	text-decoration: none;
+	font-size: 11px;
+}
+
+@media screen and (max-width: 700px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		margin: 4rem auto 1rem;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	#description {
+		margin: 1rem 2rem 4rem 2rem;
+		font-size: 1.2rem;
+	}
+	#main {
+		display: flex;
+		flex-direction: column;
+		margin: 0rem 2rem 37rem 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.box {
+		display: flex;
+		flex-direction: column;
+		height: 250px;
+		width: 100%;
+		padding: 2rem;
+	}
+	img {
+		width: 18%;
+		position: relative;
+		top: 30%;
+		left: 85%;
+	}
+}
